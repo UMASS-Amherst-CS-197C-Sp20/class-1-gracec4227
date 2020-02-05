@@ -11,6 +11,9 @@ int main(void) {
 	*/
 	//////////Your code here//////////
 	int secret = 77;
+	
+	
+	
 
 	//////////End of the code/////////
 
