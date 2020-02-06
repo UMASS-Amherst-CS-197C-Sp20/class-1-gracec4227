@@ -10,10 +10,10 @@ int main(void) {
 		Google rand() and srand()
 	*/
 	//////////Your code here//////////
-	int secret = 77;
+	int secret = 76;
+
 	
-	
-	
+
 
 	//////////End of the code/////////
 
