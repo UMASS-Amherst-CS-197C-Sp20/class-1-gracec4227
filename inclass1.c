@@ -1,4 +1,6 @@
 
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -89,8 +91,6 @@ int main(int argc, char** argv){
 	printf(INT_MAX + 1);
 	printf(((unsigned int) UINT_MAX) + 1);
 	printf((long) LONG_MAX + 1);
-	printf((float) FLT_MAX + (float) 1);
-	printf((float) FLT_MAX + (float) 1000);
 
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
