@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -34,7 +35,8 @@ int main(int argc, char** argv){
 	//////////Your code here//////////
 	int myInt = 20;
 	double myDouble = 25.30;
-	printf("size of myInt+myDouble: %lu\n", sizeof(type_int+type_long));
+	printf("size of myInt+myDouble: %lu\n", sizeof(myInt+myDouble));
+
 
 	//example
 	int type_int = 0;
@@ -87,8 +89,8 @@ int main(int argc, char** argv){
 	printf(INT_MAX + 1);
 	printf(((unsigned int) UINT_MAX) + 1);
 	printf((long) LONG_MAX + 1);
-	printf((float) FLT_MAX + 1);
-	printf((float) FLT_MAX + 1000);
+	printf((float) FLT_MAX + (float) 1);
+	printf((float) FLT_MAX + (float) 1000);
 
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
@@ -100,6 +102,7 @@ int main(int argc, char** argv){
 	printf("size of s1: %lu\n", sizeof(s1));
 	char* s2 = "asdasdasd";
 	printf("size of s2: %lu\n", sizeof(s2));
+
 	/*
 		TODO:
 		Why we are getting this result?
@@ -115,7 +118,7 @@ int main(int argc, char** argv){
 	int i = 0;
 	func(i);
 	printf("func: %d\n", i);
-	func1(&i);
+func1(&i);
 	printf("func1: %d\n", i);
 
 	printf("Program Name Is: %s",argv[0]);
@@ -155,5 +158,7 @@ void func1(int* i){
 	This function needs to print the string in the concole.
 */
 void print_string(char* s){
-	printf(“%s \n”, s)
+	for(int i = 0; i < strlen(s); i++){
+	  printf(s[i]);
+	}
 }
