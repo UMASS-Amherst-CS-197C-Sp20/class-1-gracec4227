@@ -1,6 +1,4 @@
 
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -8,6 +6,7 @@
 
 void func(int i);
 void func1(int* i);
+void print_string(char* s);
 
 int main(int argc, char** argv){
 	printf("---Lets see the size of the data types---\n");
@@ -38,11 +37,11 @@ int main(int argc, char** argv){
 	int myInt = 20;
 	double myDouble = 25.30;
 	printf("size of myInt+myDouble: %lu\n", sizeof(myInt+myDouble));
-
+	int type_int = 5;
+	long type_long = 6;
+	printf("size of myInt+myDouble: %lu\n", sizeof(myInt+myDouble));
 
 	//example
-	int type_int = 0;
-	long type_long = 0;
 	printf("size of int+long: %lu\n", sizeof(type_int+type_long));
 
 	//////////End of the code/////////
@@ -88,9 +87,11 @@ int main(int argc, char** argv){
 	*/
 	printf("#####student code start#####\n");
     //////////Your code here//////////
-	printf(INT_MAX + 1);
-	printf(((unsigned int) UINT_MAX) + 1);
-	printf((long) LONG_MAX + 1);
+	printf("%d\n", INT_MAX + 1);
+	printf("%u\n", (unsigned int) UINT_MAX + 1);
+	printf("%ld\n",  (long) LONG_MAX + 1);
+	printf("%g\n", (float) FLT_MAX + 1);
+	printf("%g\n", (float) FLT_MAX + 1000);
 
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
@@ -118,7 +119,7 @@ int main(int argc, char** argv){
 	int i = 0;
 	func(i);
 	printf("func: %d\n", i);
-func1(&i);
+	func1(&i);
 	printf("func1: %d\n", i);
 
 	printf("Program Name Is: %s",argv[0]);
@@ -135,8 +136,13 @@ func1(&i);
     }
 
     //TODO: uncommend below code after complete print_string fucntion
-    print_string(s1);
-    print_string(s2);
+    
+
+	printf("my code should print");
+	print_string(s1);
+	print_string(s2);
+	printf("end of my code");
+
 
     //exit status for the OS, 0 means no error.
     //It is different than the C true/false value
@@ -158,7 +164,5 @@ void func1(int* i){
 	This function needs to print the string in the concole.
 */
 void print_string(char* s){
-	for(int i = 0; i < strlen(s); i++){
-	  printf(s[i]);
-	}
+	printf("%s \n", s);
 }
