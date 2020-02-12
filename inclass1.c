@@ -155,6 +155,7 @@ void func1(int* i){
 	This function needs to print the string in the concole.
 */
 void print_string(char* s){
-	
-}
+	for (int i = 0; i < strlen(s); i++){
+		printf(s[i]);
+	}	
 }
