@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -164,11 +163,5 @@ void func1(int* i){
 	This function needs to print the string in the concole.
 */
 void print_string(char* s){
-<<<<<<< HEAD
 	printf("%s \n", s);
-=======
-	for (int i = 0; i < strlen(s); i++){
-		printf(s[i]);
-	}	
->>>>>>> 0e739b25fd02e408b0707b12d7631a1fb0e2a201
 }
