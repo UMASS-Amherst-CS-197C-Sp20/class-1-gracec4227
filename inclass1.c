@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -145,7 +146,7 @@ int main(int argc, char** argv){
 
     //exit status for the OS, 0 means no error.
     //It is different than the C true/false value
-	return 0;
+//	return 0;
 }
 
 void func(int i){
