@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+
 int main(void) {
 	/*
 		TODO:
@@ -10,12 +11,17 @@ int main(void) {
 		Google rand() and srand()
 	*/
 	//////////Your code here//////////
-	int secret = 76;
+        int rangeMin;
+        int rangeMax;
+        
+        printf("Type in a number as the lower range for the guesses ");
+        scanf("%d", &rangeMin);
+        printf("Type in a number as the upper range for the guesses ");
+        scanf("%d", &rangeMax);
 
-	
-
-
+        int secret = (rand() % (rangeMax - rangeMin + 1)) + rangeMin;
 	//////////End of the code/////////
+
 
 	printf("Welcome to my guessing game!\n");
 	while(true) {
